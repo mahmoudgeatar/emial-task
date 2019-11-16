@@ -1,555 +1,505 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="x-apple-disable-message-reformatting" />
-    <!-- Disable auto-scale in iOS 10 Mail entirely -->
-    <style>
-      body {
-        box-sizing: border-box;
-        margin: 0px auto;
-        padding: 0px;
-      }
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="x-apple-disable-message-reformatting" />  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+
+  <style>
+    body {
+      box-sizing: border-box;
+      margin: 0px auto;
+      padding: 0px;
+    }
+
+    section,
+    header {
+      max-width: 580px;
+      background: #fff;
+      margin: 0px auto;
+    }
+
+    @media (max-width: 634px) {
 
       section,
       header {
-        max-width: 580px;
-        background: #fff;
-        margin: 0px auto;
+        max-width: 380px;
       }
+    }
 
-      @media (max-width: 634px) {
-        section,
-        header {
-          max-width: 380px;
-        }
-      }
+    .text-center {
+      text-align: center;
+    }
 
-      .text-center {
-        text-align: center;
-      }
+    /* start section logo */
 
-      /* start section logo */
+    .logo {
+      max-width: 520px;
+      padding: 30px 0 15px;
+      border-bottom: 1px solid #eeeeee;
+      text-align: center;
+    }
 
+    @media (max-width: 634px) {
       .logo {
-        max-width: 520px;
-        padding: 30px 0 15px;
-        border-bottom: 1px solid #eeeeee;
-        text-align: center;
+        max-width: 420px;
       }
+    }
 
-      @media (max-width: 634px) {
-        .logo {
-          max-width: 420px;
-        }
-      }
+    .logo img {
+      margin: 20px;
+      width: 100px;
+    }
 
-      .logo img {
-        margin: 20px;
-        width: 100px;
-      }
+    /* start header */
+    header {
+      padding: 30px 15px 30px;
+    }
 
-      /* start header */
-      header {
-        padding: 30px 15px 30px;
-      }
+    header div {
+      max-width: 100%;
+    }
 
-      header div {
-        max-width: 100%;
-      }
+    header div img {
+      display: block;
+      width: 100%;
+    }
 
-      header div img {
-        display: block;
-        width: 100%;
-      }
+    header div p {
+      font-weight: normal;
+      color: #333333;
+      font-family: helvetica, arial, sans-serif;
+      font-size: 16px;
+      line-height: 25px;
+      text-align: center;
+      margin: 0;
+    }
 
-      header div p {
-        font-weight: normal;
-        color: #333333;
-        font-family: helvetica, arial, sans-serif;
-        font-size: 16px;
-        line-height: 25px;
-        text-align: center;
-        margin: 0;
-      }
+    /* start section photo */
+    .photo {
+      margin-bottom: 20px;
+    }
 
-      /* start section photo */
-      .photo {
-        margin-bottom: 20px;
-      }
+    .photo .block {
+      display: flex;
+      align-items: center;
+    }
 
-      .photo .block {
-        display: flex;
-        align-items: center;
-      }
+    .photo .containt {
+      min-width: 48%;
+      margin: 0px 1%;
+    }
 
-      .photo .containt {
-        min-width: 48%;
-        margin: 0px 1%;
-      }
+    .photo .containt .main-link {
+      display: block;
+      margin: 0;
+      max-width: 100%;
+      border: 1px solid #e0dedb;
+      padding: 4px;
+      background-color: #ffffff;
+    }
 
-      .photo .containt .main-link {
-        display: block;
-        margin: 0;
-        max-width: 100%;
-        border: 1px solid #e0dedb;
-        padding: 4px;
-        background-color: #ffffff;
-      }
+    .photo .containt a img {
+      display: block;
+      outline: none;
+      text-decoration: none;
+      width: 100%;
+      height: auto;
+      max-width: 2391px;
+    }
 
-      .photo .containt a img {
-        display: block;
-        outline: none;
-        text-decoration: none;
-        width: 100%;
-        height: auto;
-        max-width: 2391px;
-      }
+    .photo .data {
+      padding: 8px 0px;
+    }
 
-      .photo .data {
-        padding: 8px 0px;
-      }
+    .photo .containt .main {
+      color: #565249;
+      font: bold 14px "helvetica neue", helvetica, arial, sans-serif;
+      text-decoration: none;
+      margin: 5px 0px 5px 0px;
+    }
 
-      .photo .containt .main {
-        color: #565249;
-        font: bold 14px "helvetica neue", helvetica, arial, sans-serif;
-        text-decoration: none;
-        margin: 5px 0px 5px 0px;
-      }
+    .photo .containt .main span {
+      color: #ada8a0;
+      font: normal 12px/16px Arial, sans-serif;
+      text-decoration: none;
+    }
 
-      .photo .containt .main span {
-        color: #ada8a0;
-        font: normal 12px/16px Arial, sans-serif;
-        text-decoration: none;
-      }
+    .photo .containt .link {
+      color: #807b75;
+      text-decoration: none;
+    }
 
-      .photo .containt .link {
-        color: #807b75;
-        text-decoration: none;
-      }
+    /* start section data */
+    .data button {
+      display: block;
+      margin: 15px auto;
+      border: none;
+      background: transparent;
+      padding: 0px 20px 30px;
+    }
 
-      /* start section data */
-      .data button {
-        display: block;
-        margin: 15px auto;
-        border: none;
-        background: transparent;
-        padding: 0px 20px 30px;
-      }
+    .data button a {
+      display: inline-block;
+      text-decoration: none;
+      background: #8ba753;
+      border: 1px solid #8ba753;
+      border-radius: 3px;
+      color: #ffffff;
+      font-family: helvetica, arial, sans-serif;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 12px 16px;
+    }
 
-      .data button a {
-        display: inline-block;
-        text-decoration: none;
-        background: #8ba753;
-        border: 1px solid #8ba753;
-        border-radius: 3px;
-        color: #ffffff;
-        font-family: helvetica, arial, sans-serif;
-        font-size: 12px;
-        font-weight: bold;
-        padding: 12px 16px;
-      }
+    .data p {
+      font-weight: normal;
+      color: #333333;
+      font-family: helvetica, arial, sans-serif;
+      font-size: 16px;
+      line-height: 25px;
+      text-align: center;
+      margin: 0;
+      padding: 0px 15px 30px;
+    }
 
-      .data p {
-        font-weight: normal;
-        color: #333333;
-        font-family: helvetica, arial, sans-serif;
-        font-size: 16px;
-        line-height: 25px;
-        text-align: center;
-        margin: 0;
-        padding: 0px 15px 30px;
-      }
+    .data p a {
+      border-bottom: 1px solid #cccccc;
+      color: #69803a;
+      text-decoration: none;
+    }
 
-      .data p a {
-        border-bottom: 1px solid #cccccc;
-        color: #69803a;
-        text-decoration: none;
-      }
+    /* start footer */
+    footer {
+      margin: auto;
+      max-width: 95%;
+      border-top: 1px solid #e5e4e1;
+      padding: 20px;
+    }
 
-      /* start footer */
-      footer {
-        margin: auto;
-        max-width: 95%;
-        border-top: 1px solid #e5e4e1;
-        padding: 20px;
-      }
+    footer p {
+      font-size: 12px;
+      color: #949291;
+      margin: 15px;
+    }
 
-      footer p {
-        font-size: 12px;
-        color: #949291;
-        margin: 15px;
-      }
+    footer a .ticket {
+      width: 40px;
+      height: 40px;
+    }
 
-      footer a .ticket {
-        width: 40px;
-        height: 40px;
-      }
+    footer p a {
+      color: #15c;
+      text-decoration: none;
+    }
 
-      footer p a {
-        color: #15c;
-        text-decoration: none;
-      }
+    footer .photo a img {
+      padding: 20px 10px;
+    }
+  </style>
+  <title>Email</title>
+</head>
 
-      footer .photo a img {
-        padding: 20px 10px;
-      }
-    </style>
-    <title>Email</title>
-  </head>
+<body>
+  <!-- start logo section -->
+  <section class="logo text-center">
+    <a href=""><img alt="Creative Market Logo"
+        src="https://ci6.googleusercontent.com/proxy/mdGQYhNGHjKD5EX3DIn1z8V6Yxb_4N1BbuLzK17vc2dnM7NLkFaJbXYl2BLGA0OibvhTg_Ya10ulpMAxZbdC6oEBBPZaABG1G1WQze69URjHJNAOizrylX0_pqYYur_h-w=s0-d-e1-ft#https://d3ui957tjb5bqd.cloudfront.net/images/emails/logos/logo-green-xs@2x.png" /></a>
+  </section>
 
-  <body>
-    <!-- start logo section -->
-    <section class="logo text-center">
-      <a href=""
-        ><img
-          alt="Creative Market Logo"
-          src="https://ci6.googleusercontent.com/proxy/mdGQYhNGHjKD5EX3DIn1z8V6Yxb_4N1BbuLzK17vc2dnM7NLkFaJbXYl2BLGA0OibvhTg_Ya10ulpMAxZbdC6oEBBPZaABG1G1WQze69URjHJNAOizrylX0_pqYYur_h-w=s0-d-e1-ft#https://d3ui957tjb5bqd.cloudfront.net/images/emails/logos/logo-green-xs@2x.png"
-      /></a>
-    </section>
+  <!-- end logo section -->
 
-    <!-- end logo section -->
+  <!-- start section header -->
 
-    <!-- start section header -->
+  <header>
+    <div>
+      <a href="">
+        <img
+          src=" https://ci5.googleusercontent.com/proxy/M4tzZmyxdDSHaecydggkIG6XbKo9ZIJNK7nCTLapTRUTolZ9oCc7l_SsB4EmbBRvwqT_OVFUb-aoNQHyA4KfU9dxZ0oyDD3DBjgjgAacgaS-XL6PwOCExhNWXxu57_5_5c9K-DMOR9qDHADEbEwHEaJttMRC0aHoxg=s0-d-e1-ft#https://d3ui957tjb5bqd.cloudfront.net/images/emails/1/cm-certified/newsletter/CertifiedEmailHeader.png"
+          alt="" srcset="" />
+      </a>
+      <p>
+        Exceptional fonts, graphics, templates and more, quality-checked by
+        our Curation Team every week.
+      </p>
+    </div>
+  </header>
 
-    <header>
-      <div>
-        <a href="">
-          <img
-            src=" https://ci5.googleusercontent.com/proxy/M4tzZmyxdDSHaecydggkIG6XbKo9ZIJNK7nCTLapTRUTolZ9oCc7l_SsB4EmbBRvwqT_OVFUb-aoNQHyA4KfU9dxZ0oyDD3DBjgjgAacgaS-XL6PwOCExhNWXxu57_5_5c9K-DMOR9qDHADEbEwHEaJttMRC0aHoxg=s0-d-e1-ft#https://d3ui957tjb5bqd.cloudfront.net/images/emails/1/cm-certified/newsletter/CertifiedEmailHeader.png"
-            alt=""
-            srcset=""
-          />
-        </a>
-        <p>
-          Exceptional fonts, graphics, templates and more, quality-checked by
-          our Curation Team every week.
-        </p>
+  <!-- end header section -->
+
+  <!--start section photo  -->
+
+  <section class="photo">
+    <div class="block">
+      <div class="containt">
+        <div>
+          <a href="" class="main-link"><img
+              src=" https://ci6.googleusercontent.com/proxy/dAOlEg-aH4ISSSxvBG4Bkv282dyDVKjsyMlMVBdN1euKMZTAh8RqLVSaRT6Ed5-J55e4LUNyZ1X77JE-zi3xoX8xkMcaSm1prqnamhj64KtzIASH42yJfsXCO6smof1Z6lVApoOV9oFUP7dXwOTzI56K7IQFRhxtwmBRtSWArOvkE7qmXM3ijwccZHO_q6Vhg22hpRfBXQfwTkLBI31t=s0-d-e1-ft#https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/7277292/300/200/m1/fpnw/wm0/tropiello-.png?1573767628&s=148e49b6b441d2361b0abd5019d8a532"
+              alt="" srcset="" /></a>
+        </div>
+
+        <div class=" data">
+          <a href="" class="main">
+            Tropiello-Beatuy Vintage Font <br />
+            <span>by</span>
+          </a>
+          <a href="" class="link">creativemedialab</a>
+        </div>
       </div>
-    </header>
 
-    <!-- end header section -->
-
-    <!--start section photo  -->
-
-    <section class="photo">
-      <div class="block">
-        <div class="containt">
-          <div>
-            <a href="" class="main-link"
-              ><img
-                src=" https://ci6.googleusercontent.com/proxy/dAOlEg-aH4ISSSxvBG4Bkv282dyDVKjsyMlMVBdN1euKMZTAh8RqLVSaRT6Ed5-J55e4LUNyZ1X77JE-zi3xoX8xkMcaSm1prqnamhj64KtzIASH42yJfsXCO6smof1Z6lVApoOV9oFUP7dXwOTzI56K7IQFRhxtwmBRtSWArOvkE7qmXM3ijwccZHO_q6Vhg22hpRfBXQfwTkLBI31t=s0-d-e1-ft#https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/7277292/300/200/m1/fpnw/wm0/tropiello-.png?1573767628&s=148e49b6b441d2361b0abd5019d8a532"
-                alt=""
-                srcset=""
-            /></a>
-          </div>
-
-          <div class=" data">
-            <a href="" class="main">
-              Tropiello-Beatuy Vintage Font <br />
-              <span>by</span>
-            </a>
-            <a href="" class="link">creativemedialab</a>
-          </div>
+      <div class="containt">
+        <div>
+          <a href="" class="main-link"><img
+              src=" https://ci6.googleusercontent.com/proxy/dAOlEg-aH4ISSSxvBG4Bkv282dyDVKjsyMlMVBdN1euKMZTAh8RqLVSaRT6Ed5-J55e4LUNyZ1X77JE-zi3xoX8xkMcaSm1prqnamhj64KtzIASH42yJfsXCO6smof1Z6lVApoOV9oFUP7dXwOTzI56K7IQFRhxtwmBRtSWArOvkE7qmXM3ijwccZHO_q6Vhg22hpRfBXQfwTkLBI31t=s0-d-e1-ft#https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/7277292/300/200/m1/fpnw/wm0/tropiello-.png?1573767628&s=148e49b6b441d2361b0abd5019d8a532"
+              alt="" srcset="" /></a>
         </div>
 
-        <div class="containt">
-          <div>
-            <a href="" class="main-link"
-              ><img
-                src=" https://ci6.googleusercontent.com/proxy/dAOlEg-aH4ISSSxvBG4Bkv282dyDVKjsyMlMVBdN1euKMZTAh8RqLVSaRT6Ed5-J55e4LUNyZ1X77JE-zi3xoX8xkMcaSm1prqnamhj64KtzIASH42yJfsXCO6smof1Z6lVApoOV9oFUP7dXwOTzI56K7IQFRhxtwmBRtSWArOvkE7qmXM3ijwccZHO_q6Vhg22hpRfBXQfwTkLBI31t=s0-d-e1-ft#https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/7277292/300/200/m1/fpnw/wm0/tropiello-.png?1573767628&s=148e49b6b441d2361b0abd5019d8a532"
-                alt=""
-                srcset=""
-            /></a>
-          </div>
-
-          <div class=" data">
-            <a href="" class="main">
-              Tropiello-Beatuy Vintage Font <br />
-              <span>by</span>
-            </a>
-            <a href="" class="link">creativemedialab</a>
-          </div>
+        <div class=" data">
+          <a href="" class="main">
+            Tropiello-Beatuy Vintage Font <br />
+            <span>by</span>
+          </a>
+          <a href="" class="link">creativemedialab</a>
         </div>
-      </div> <!--en  block-->
-
-      <div class="block">
-        <div class="containt">
-          <div>
-            <a href="" class="main-link"
-              ><img
-                src=" https://ci6.googleusercontent.com/proxy/dAOlEg-aH4ISSSxvBG4Bkv282dyDVKjsyMlMVBdN1euKMZTAh8RqLVSaRT6Ed5-J55e4LUNyZ1X77JE-zi3xoX8xkMcaSm1prqnamhj64KtzIASH42yJfsXCO6smof1Z6lVApoOV9oFUP7dXwOTzI56K7IQFRhxtwmBRtSWArOvkE7qmXM3ijwccZHO_q6Vhg22hpRfBXQfwTkLBI31t=s0-d-e1-ft#https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/7277292/300/200/m1/fpnw/wm0/tropiello-.png?1573767628&s=148e49b6b441d2361b0abd5019d8a532"
-                alt=""
-                srcset=""
-            /></a>
-          </div>
-
-          <div class=" data">
-            <a href="" class="main">
-              Tropiello-Beatuy Vintage Font <br />
-              <span>by</span>
-            </a>
-            <a href="" class="link">creativemedialab</a>
-          </div>
-        </div>
-
-        <div class="containt">
-          <div>
-            <a href="" class="main-link"
-              ><img
-                src=" https://ci6.googleusercontent.com/proxy/dAOlEg-aH4ISSSxvBG4Bkv282dyDVKjsyMlMVBdN1euKMZTAh8RqLVSaRT6Ed5-J55e4LUNyZ1X77JE-zi3xoX8xkMcaSm1prqnamhj64KtzIASH42yJfsXCO6smof1Z6lVApoOV9oFUP7dXwOTzI56K7IQFRhxtwmBRtSWArOvkE7qmXM3ijwccZHO_q6Vhg22hpRfBXQfwTkLBI31t=s0-d-e1-ft#https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/7277292/300/200/m1/fpnw/wm0/tropiello-.png?1573767628&s=148e49b6b441d2361b0abd5019d8a532"
-                alt=""
-                srcset=""
-            /></a>
-          </div>
-
-          <div class=" data">
-            <a href="" class="main">
-              Tropiello-Beatuy Vintage Font <br />
-              <span>by</span>
-            </a>
-            <a href="" class="link">creativemedialab</a>
-          </div>
-        </div>
-      </div><!--en  block-->
-
-      <div class="block">
-        <div class="containt">
-          <div>
-            <a href="" class="main-link"
-              ><img
-                src=" https://ci6.googleusercontent.com/proxy/dAOlEg-aH4ISSSxvBG4Bkv282dyDVKjsyMlMVBdN1euKMZTAh8RqLVSaRT6Ed5-J55e4LUNyZ1X77JE-zi3xoX8xkMcaSm1prqnamhj64KtzIASH42yJfsXCO6smof1Z6lVApoOV9oFUP7dXwOTzI56K7IQFRhxtwmBRtSWArOvkE7qmXM3ijwccZHO_q6Vhg22hpRfBXQfwTkLBI31t=s0-d-e1-ft#https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/7277292/300/200/m1/fpnw/wm0/tropiello-.png?1573767628&s=148e49b6b441d2361b0abd5019d8a532"
-                alt=""
-                srcset=""
-            /></a>
-          </div>
-
-          <div class=" data">
-            <a href="" class="main">
-              Tropiello-Beatuy Vintage Font <br />
-              <span>by</span>
-            </a>
-            <a href="" class="link">creativemedialab</a>
-          </div>
-        </div>
-
-        <div class="containt">
-          <div>
-            <a href="" class="main-link"
-              ><img
-                src=" https://ci6.googleusercontent.com/proxy/dAOlEg-aH4ISSSxvBG4Bkv282dyDVKjsyMlMVBdN1euKMZTAh8RqLVSaRT6Ed5-J55e4LUNyZ1X77JE-zi3xoX8xkMcaSm1prqnamhj64KtzIASH42yJfsXCO6smof1Z6lVApoOV9oFUP7dXwOTzI56K7IQFRhxtwmBRtSWArOvkE7qmXM3ijwccZHO_q6Vhg22hpRfBXQfwTkLBI31t=s0-d-e1-ft#https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/7277292/300/200/m1/fpnw/wm0/tropiello-.png?1573767628&s=148e49b6b441d2361b0abd5019d8a532"
-                alt=""
-                srcset=""
-            /></a>
-          </div>
-
-          <div class=" data">
-            <a href="" class="main">
-              Tropiello-Beatuy Vintage Font <br />
-              <span>by</span>
-            </a>
-            <a href="" class="link">creativemedialab</a>
-          </div>
-        </div>
-      </div><!--en  block-->
-
-      <div class="block">
-        <div class="containt">
-          <div>
-            <a href="" class="main-link"
-              ><img
-                src=" https://ci6.googleusercontent.com/proxy/dAOlEg-aH4ISSSxvBG4Bkv282dyDVKjsyMlMVBdN1euKMZTAh8RqLVSaRT6Ed5-J55e4LUNyZ1X77JE-zi3xoX8xkMcaSm1prqnamhj64KtzIASH42yJfsXCO6smof1Z6lVApoOV9oFUP7dXwOTzI56K7IQFRhxtwmBRtSWArOvkE7qmXM3ijwccZHO_q6Vhg22hpRfBXQfwTkLBI31t=s0-d-e1-ft#https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/7277292/300/200/m1/fpnw/wm0/tropiello-.png?1573767628&s=148e49b6b441d2361b0abd5019d8a532"
-                alt=""
-                srcset=""
-            /></a>
-          </div>
-
-          <div class=" data">
-            <a href="" class="main">
-              Tropiello-Beatuy Vintage Font <br />
-              <span>by</span>
-            </a>
-            <a href="" class="link">creativemedialab</a>
-          </div>
-        </div>
-
-        <div class="containt">
-          <div>
-            <a href="" class="main-link"
-              ><img
-                src=" https://ci6.googleusercontent.com/proxy/dAOlEg-aH4ISSSxvBG4Bkv282dyDVKjsyMlMVBdN1euKMZTAh8RqLVSaRT6Ed5-J55e4LUNyZ1X77JE-zi3xoX8xkMcaSm1prqnamhj64KtzIASH42yJfsXCO6smof1Z6lVApoOV9oFUP7dXwOTzI56K7IQFRhxtwmBRtSWArOvkE7qmXM3ijwccZHO_q6Vhg22hpRfBXQfwTkLBI31t=s0-d-e1-ft#https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/7277292/300/200/m1/fpnw/wm0/tropiello-.png?1573767628&s=148e49b6b441d2361b0abd5019d8a532"
-                alt=""
-                srcset=""
-            /></a>
-          </div>
-
-          <div class=" data">
-            <a href="" class="main">
-              Tropiello-Beatuy Vintage Font <br />
-              <span>by</span>
-            </a>
-            <a href="" class="link">creativemedialab</a>
-          </div>
-        </div>
-      </div><!--en  block-->
-
-      <div class="block">
-        <div class="containt">
-          <div>
-            <a href="" class="main-link"
-              ><img
-                src=" https://ci6.googleusercontent.com/proxy/dAOlEg-aH4ISSSxvBG4Bkv282dyDVKjsyMlMVBdN1euKMZTAh8RqLVSaRT6Ed5-J55e4LUNyZ1X77JE-zi3xoX8xkMcaSm1prqnamhj64KtzIASH42yJfsXCO6smof1Z6lVApoOV9oFUP7dXwOTzI56K7IQFRhxtwmBRtSWArOvkE7qmXM3ijwccZHO_q6Vhg22hpRfBXQfwTkLBI31t=s0-d-e1-ft#https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/7277292/300/200/m1/fpnw/wm0/tropiello-.png?1573767628&s=148e49b6b441d2361b0abd5019d8a532"
-                alt=""
-                srcset=""
-            /></a>
-          </div>
-
-          <div class=" data">
-            <a href="" class="main">
-              Tropiello-Beatuy Vintage Font <br />
-              <span>by</span>
-            </a>
-            <a href="" class="link">creativemedialab</a>
-          </div>
-        </div>
-
-        <div class="containt">
-          <div>
-            <a href="" class="main-link"
-              ><img
-                src=" https://ci6.googleusercontent.com/proxy/dAOlEg-aH4ISSSxvBG4Bkv282dyDVKjsyMlMVBdN1euKMZTAh8RqLVSaRT6Ed5-J55e4LUNyZ1X77JE-zi3xoX8xkMcaSm1prqnamhj64KtzIASH42yJfsXCO6smof1Z6lVApoOV9oFUP7dXwOTzI56K7IQFRhxtwmBRtSWArOvkE7qmXM3ijwccZHO_q6Vhg22hpRfBXQfwTkLBI31t=s0-d-e1-ft#https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/7277292/300/200/m1/fpnw/wm0/tropiello-.png?1573767628&s=148e49b6b441d2361b0abd5019d8a532"
-                alt=""
-                srcset=""
-            /></a>
-          </div>
-
-          <div class=" data">
-            <a href="" class="main">
-              Tropiello-Beatuy Vintage Font <br />
-              <span>by</span>
-            </a>
-            <a href="" class="link">creativemedialab</a>
-          </div>
-        </div>
-      </div><!--en  block-->
-
-      <div class="block">
-        <div class="containt">
-          <div>
-            <a href="" class="main-link"
-              ><img
-                src=" https://ci6.googleusercontent.com/proxy/dAOlEg-aH4ISSSxvBG4Bkv282dyDVKjsyMlMVBdN1euKMZTAh8RqLVSaRT6Ed5-J55e4LUNyZ1X77JE-zi3xoX8xkMcaSm1prqnamhj64KtzIASH42yJfsXCO6smof1Z6lVApoOV9oFUP7dXwOTzI56K7IQFRhxtwmBRtSWArOvkE7qmXM3ijwccZHO_q6Vhg22hpRfBXQfwTkLBI31t=s0-d-e1-ft#https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/7277292/300/200/m1/fpnw/wm0/tropiello-.png?1573767628&s=148e49b6b441d2361b0abd5019d8a532"
-                alt=""
-                srcset=""
-            /></a>
-          </div>
-
-          <div class=" data">
-            <a href="" class="main">
-              Tropiello-Beatuy Vintage Font <br />
-              <span>by</span>
-            </a>
-            <a href="" class="link">creativemedialab</a>
-          </div>
-        </div>
-
-        <div class="containt">
-          <div>
-            <a href="" class="main-link"
-              ><img
-                src=" https://ci6.googleusercontent.com/proxy/dAOlEg-aH4ISSSxvBG4Bkv282dyDVKjsyMlMVBdN1euKMZTAh8RqLVSaRT6Ed5-J55e4LUNyZ1X77JE-zi3xoX8xkMcaSm1prqnamhj64KtzIASH42yJfsXCO6smof1Z6lVApoOV9oFUP7dXwOTzI56K7IQFRhxtwmBRtSWArOvkE7qmXM3ijwccZHO_q6Vhg22hpRfBXQfwTkLBI31t=s0-d-e1-ft#https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/7277292/300/200/m1/fpnw/wm0/tropiello-.png?1573767628&s=148e49b6b441d2361b0abd5019d8a532"
-                alt=""
-                srcset=""
-            /></a>
-          </div>
-
-          <div class=" data">
-            <a href="" class="main">
-              Tropiello-Beatuy Vintage Font <br />
-              <span>by</span>
-            </a>
-            <a href="" class="link">creativemedialab</a>
-          </div>
-        </div>
-      </div><!--en  block-->
-    </section>
-
-    <!--end section photo  -->
-
-    <!-- start section data -->
-
-    <section class="data text-center">
-      <button><a href="">Shop All Certified Products Here</a></button>
-
-      <p>
-        We want to take the guesswork out of the purchase process and help you
-        complete your designs faster, so we created
-        <b>Certified by Creative Market,</b><br />
-        a new program that guarantees a product has passed our Design Curation
-        Team’s extensive, manual quality check of 20+ items.
-      </p>
-
-      <p>
-        To learn more about <b>Certified by Creative Market,</b> our new badge
-        and<br />
-        review program for exceptional design products, check out our blog post
-        <a href=""><b>Introducing Our New Certified Badge.</b></a>
-      </p>
-    </section>
-
-    <!-- end section data -->
-
-    <!--start footer  -->
-
-    <footer class="text-center">
-      <a href=""
-        ><img
-          class="ticket"
-          src="https://ci5.googleusercontent.com/proxy/zdmg96N3kG_4cetHCnTlN9Mu3GRSIcwOmOFEjXtXdP0EZbfunUVnVxFlbTMQwa_-5qzPrd32hzn0uLpdGqxU3xXHCPg78TMCqv0HtbVwj8iLW9QaXU0kioSWvw=s0-d-e1-ft#https://d3ui957tjb5bqd.cloudfront.net/images/emails/logos/cm-mark.png?v1"
-          alt=""
-          srcset=""
-      /></a>
-
-      <p>
-        Creative Market,
-        <a href=""
-          >600 Congress Ave, 14th Floor, Austin, TX 78701<br />
-          Unsubscribe</a
-        >
-        from these emails
-      </p>
-
-      <div class="photo">
-        <a href=""
-          ><img
-            src="https://ci5.googleusercontent.com/proxy/SHumbkt5tBp3xDJkFCHz8Ra_07Nnd5PYeCalGLaYVbHRC-ky48_Ta9EiaawynPS4ytG8beylKV52aBZsUrUbHYjKRPYcFU_j95kwhW2WNM0fSqvBEg=s0-d-e1-ft#https://d3ui957tjb5bqd.cloudfront.net/images/emails/1/facebook.png"
-            alt=""
-            srcset=""
-        /></a>
-
-        <a href=""
-          ><img
-            src="https://ci6.googleusercontent.com/proxy/h_tUIm_fnPpWuwL2poiL46VvlmB6DJq3mhQ4pNe_2ccpJ30UMtz6qjslFqgLLD_8vS4_oQdzE3ofrXl-8HS-9QqfSBUuSZA72D_2-qNHaE2XqBUN=s0-d-e1-ft#https://d3ui957tjb5bqd.cloudfront.net/images/emails/1/twitter.png"
-            alt=""
-            srcset=""
-        /></a>
-
-        <a href=""
-          ><img
-            src="https://ci6.googleusercontent.com/proxy/kwl90M2A7-7C7N5f4z2DMaBQ_hyRfd4r1qN4afvbzxbxOv6SSquR0JrP4rk3pgaFDf82jCHK0JQZUI3FQH1at096wOFgCWWrI8MlArTg1aY2yBWixS0=s0-d-e1-ft#https://d3ui957tjb5bqd.cloudfront.net/images/emails/1/pinterest.png"
-            alt=""
-            srcset=""
-        /></a>
-
-        <a href=""
-          ><img
-            src="https://ci5.googleusercontent.com/proxy/npvlW1CndfztRoeQTPWqnYlBiAQWVCLRBkAliH-fxcFoV21ePcuJvO5N_CLr1ABXxT8JOR_NYTTX2WDXFS8VlYBBTG8vGneATgburJuTqCLy1CiLYTk=s0-d-e1-ft#https://d3ui957tjb5bqd.cloudfront.net/images/emails/1/instagram.png"
-            alt=""
-            srcset=""
-        /></a>
       </div>
-    </footer>
-  </body>
+    </div>
+    <!--en  block-->
+
+    <div class="block">
+      <div class="containt">
+        <div>
+          <a href="" class="main-link"><img
+              src=" https://ci6.googleusercontent.com/proxy/dAOlEg-aH4ISSSxvBG4Bkv282dyDVKjsyMlMVBdN1euKMZTAh8RqLVSaRT6Ed5-J55e4LUNyZ1X77JE-zi3xoX8xkMcaSm1prqnamhj64KtzIASH42yJfsXCO6smof1Z6lVApoOV9oFUP7dXwOTzI56K7IQFRhxtwmBRtSWArOvkE7qmXM3ijwccZHO_q6Vhg22hpRfBXQfwTkLBI31t=s0-d-e1-ft#https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/7277292/300/200/m1/fpnw/wm0/tropiello-.png?1573767628&s=148e49b6b441d2361b0abd5019d8a532"
+              alt="" srcset="" /></a>
+        </div>
+
+        <div class=" data">
+          <a href="" class="main">
+            Tropiello-Beatuy Vintage Font <br />
+            <span>by</span>
+          </a>
+          <a href="" class="link">creativemedialab</a>
+        </div>
+      </div>
+
+      <div class="containt">
+        <div>
+          <a href="" class="main-link"><img
+              src=" https://ci6.googleusercontent.com/proxy/dAOlEg-aH4ISSSxvBG4Bkv282dyDVKjsyMlMVBdN1euKMZTAh8RqLVSaRT6Ed5-J55e4LUNyZ1X77JE-zi3xoX8xkMcaSm1prqnamhj64KtzIASH42yJfsXCO6smof1Z6lVApoOV9oFUP7dXwOTzI56K7IQFRhxtwmBRtSWArOvkE7qmXM3ijwccZHO_q6Vhg22hpRfBXQfwTkLBI31t=s0-d-e1-ft#https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/7277292/300/200/m1/fpnw/wm0/tropiello-.png?1573767628&s=148e49b6b441d2361b0abd5019d8a532"
+              alt="" srcset="" /></a>
+        </div>
+
+        <div class=" data">
+          <a href="" class="main">
+            Tropiello-Beatuy Vintage Font <br />
+            <span>by</span>
+          </a>
+          <a href="" class="link">creativemedialab</a>
+        </div>
+      </div>
+    </div>
+    <!--en  block-->
+
+    <div class="block">
+      <div class="containt">
+        <div>
+          <a href="" class="main-link"><img
+              src=" https://ci6.googleusercontent.com/proxy/dAOlEg-aH4ISSSxvBG4Bkv282dyDVKjsyMlMVBdN1euKMZTAh8RqLVSaRT6Ed5-J55e4LUNyZ1X77JE-zi3xoX8xkMcaSm1prqnamhj64KtzIASH42yJfsXCO6smof1Z6lVApoOV9oFUP7dXwOTzI56K7IQFRhxtwmBRtSWArOvkE7qmXM3ijwccZHO_q6Vhg22hpRfBXQfwTkLBI31t=s0-d-e1-ft#https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/7277292/300/200/m1/fpnw/wm0/tropiello-.png?1573767628&s=148e49b6b441d2361b0abd5019d8a532"
+              alt="" srcset="" /></a>
+        </div>
+
+        <div class=" data">
+          <a href="" class="main">
+            Tropiello-Beatuy Vintage Font <br />
+            <span>by</span>
+          </a>
+          <a href="" class="link">creativemedialab</a>
+        </div>
+      </div>
+
+      <div class="containt">
+        <div>
+          <a href="" class="main-link"><img
+              src=" https://ci6.googleusercontent.com/proxy/dAOlEg-aH4ISSSxvBG4Bkv282dyDVKjsyMlMVBdN1euKMZTAh8RqLVSaRT6Ed5-J55e4LUNyZ1X77JE-zi3xoX8xkMcaSm1prqnamhj64KtzIASH42yJfsXCO6smof1Z6lVApoOV9oFUP7dXwOTzI56K7IQFRhxtwmBRtSWArOvkE7qmXM3ijwccZHO_q6Vhg22hpRfBXQfwTkLBI31t=s0-d-e1-ft#https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/7277292/300/200/m1/fpnw/wm0/tropiello-.png?1573767628&s=148e49b6b441d2361b0abd5019d8a532"
+              alt="" srcset="" /></a>
+        </div>
+
+        <div class=" data">
+          <a href="" class="main">
+            Tropiello-Beatuy Vintage Font <br />
+            <span>by</span>
+          </a>
+          <a href="" class="link">creativemedialab</a>
+        </div>
+      </div>
+    </div>
+    <!--en  block-->
+
+    <div class="block">
+      <div class="containt">
+        <div>
+          <a href="" class="main-link"><img
+              src=" https://ci6.googleusercontent.com/proxy/dAOlEg-aH4ISSSxvBG4Bkv282dyDVKjsyMlMVBdN1euKMZTAh8RqLVSaRT6Ed5-J55e4LUNyZ1X77JE-zi3xoX8xkMcaSm1prqnamhj64KtzIASH42yJfsXCO6smof1Z6lVApoOV9oFUP7dXwOTzI56K7IQFRhxtwmBRtSWArOvkE7qmXM3ijwccZHO_q6Vhg22hpRfBXQfwTkLBI31t=s0-d-e1-ft#https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/7277292/300/200/m1/fpnw/wm0/tropiello-.png?1573767628&s=148e49b6b441d2361b0abd5019d8a532"
+              alt="" srcset="" /></a>
+        </div>
+
+        <div class=" data">
+          <a href="" class="main">
+            Tropiello-Beatuy Vintage Font <br />
+            <span>by</span>
+          </a>
+          <a href="" class="link">creativemedialab</a>
+        </div>
+      </div>
+
+      <div class="containt">
+        <div>
+          <a href="" class="main-link"><img
+              src=" https://ci6.googleusercontent.com/proxy/dAOlEg-aH4ISSSxvBG4Bkv282dyDVKjsyMlMVBdN1euKMZTAh8RqLVSaRT6Ed5-J55e4LUNyZ1X77JE-zi3xoX8xkMcaSm1prqnamhj64KtzIASH42yJfsXCO6smof1Z6lVApoOV9oFUP7dXwOTzI56K7IQFRhxtwmBRtSWArOvkE7qmXM3ijwccZHO_q6Vhg22hpRfBXQfwTkLBI31t=s0-d-e1-ft#https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/7277292/300/200/m1/fpnw/wm0/tropiello-.png?1573767628&s=148e49b6b441d2361b0abd5019d8a532"
+              alt="" srcset="" /></a>
+        </div>
+
+        <div class=" data">
+          <a href="" class="main">
+            Tropiello-Beatuy Vintage Font <br />
+            <span>by</span>
+          </a>
+          <a href="" class="link">creativemedialab</a>
+        </div>
+      </div>
+    </div>
+    <!--en  block-->
+
+    <div class="block">
+      <div class="containt">
+        <div>
+          <a href="" class="main-link"><img
+              src=" https://ci6.googleusercontent.com/proxy/dAOlEg-aH4ISSSxvBG4Bkv282dyDVKjsyMlMVBdN1euKMZTAh8RqLVSaRT6Ed5-J55e4LUNyZ1X77JE-zi3xoX8xkMcaSm1prqnamhj64KtzIASH42yJfsXCO6smof1Z6lVApoOV9oFUP7dXwOTzI56K7IQFRhxtwmBRtSWArOvkE7qmXM3ijwccZHO_q6Vhg22hpRfBXQfwTkLBI31t=s0-d-e1-ft#https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/7277292/300/200/m1/fpnw/wm0/tropiello-.png?1573767628&s=148e49b6b441d2361b0abd5019d8a532"
+              alt="" srcset="" /></a>
+        </div>
+
+        <div class=" data">
+          <a href="" class="main">
+            Tropiello-Beatuy Vintage Font <br />
+            <span>by</span>
+          </a>
+          <a href="" class="link">creativemedialab</a>
+        </div>
+      </div>
+
+      <div class="containt">
+        <div>
+          <a href="" class="main-link"><img
+              src=" https://ci6.googleusercontent.com/proxy/dAOlEg-aH4ISSSxvBG4Bkv282dyDVKjsyMlMVBdN1euKMZTAh8RqLVSaRT6Ed5-J55e4LUNyZ1X77JE-zi3xoX8xkMcaSm1prqnamhj64KtzIASH42yJfsXCO6smof1Z6lVApoOV9oFUP7dXwOTzI56K7IQFRhxtwmBRtSWArOvkE7qmXM3ijwccZHO_q6Vhg22hpRfBXQfwTkLBI31t=s0-d-e1-ft#https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/7277292/300/200/m1/fpnw/wm0/tropiello-.png?1573767628&s=148e49b6b441d2361b0abd5019d8a532"
+              alt="" srcset="" /></a>
+        </div>
+
+        <div class=" data">
+          <a href="" class="main">
+            Tropiello-Beatuy Vintage Font <br />
+            <span>by</span>
+          </a>
+          <a href="" class="link">creativemedialab</a>
+        </div>
+      </div>
+    </div>
+    <!--en  block-->
+
+    <div class="block">
+      <div class="containt">
+        <div>
+          <a href="" class="main-link"><img
+              src=" https://ci6.googleusercontent.com/proxy/dAOlEg-aH4ISSSxvBG4Bkv282dyDVKjsyMlMVBdN1euKMZTAh8RqLVSaRT6Ed5-J55e4LUNyZ1X77JE-zi3xoX8xkMcaSm1prqnamhj64KtzIASH42yJfsXCO6smof1Z6lVApoOV9oFUP7dXwOTzI56K7IQFRhxtwmBRtSWArOvkE7qmXM3ijwccZHO_q6Vhg22hpRfBXQfwTkLBI31t=s0-d-e1-ft#https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/7277292/300/200/m1/fpnw/wm0/tropiello-.png?1573767628&s=148e49b6b441d2361b0abd5019d8a532"
+              alt="" srcset="" /></a>
+        </div>
+
+        <div class=" data">
+          <a href="" class="main">
+            Tropiello-Beatuy Vintage Font <br />
+            <span>by</span>
+          </a>
+          <a href="" class="link">creativemedialab</a>
+        </div>
+      </div>
+
+      <div class="containt">
+        <div>
+          <a href="" class="main-link"><img
+              src=" https://ci6.googleusercontent.com/proxy/dAOlEg-aH4ISSSxvBG4Bkv282dyDVKjsyMlMVBdN1euKMZTAh8RqLVSaRT6Ed5-J55e4LUNyZ1X77JE-zi3xoX8xkMcaSm1prqnamhj64KtzIASH42yJfsXCO6smof1Z6lVApoOV9oFUP7dXwOTzI56K7IQFRhxtwmBRtSWArOvkE7qmXM3ijwccZHO_q6Vhg22hpRfBXQfwTkLBI31t=s0-d-e1-ft#https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/7277292/300/200/m1/fpnw/wm0/tropiello-.png?1573767628&s=148e49b6b441d2361b0abd5019d8a532"
+              alt="" srcset="" /></a>
+        </div>
+
+        <div class=" data">
+          <a href="" class="main">
+            Tropiello-Beatuy Vintage Font <br />
+            <span>by</span>
+          </a>
+          <a href="" class="link">creativemedialab</a>
+        </div>
+      </div>
+    </div>
+    <!--en  block-->
+  </section>
+
+  <!--end section photo  -->
+
+  <!-- start section data -->
+
+  <section class="data text-center">
+    <button><a href="">Shop All Certified Products Here</a></button>
+
+    <p>
+      We want to take the guesswork out of the purchase process and help you
+      complete your designs faster, so we created
+      <b>Certified by Creative Market,</b><br />
+      a new program that guarantees a product has passed our Design Curation
+      Team’s extensive, manual quality check of 20+ items.
+    </p>
+
+    <p>
+      To learn more about <b>Certified by Creative Market,</b> our new badge
+      and<br />
+      review program for exceptional design products, check out our blog post
+      <a href=""><b>Introducing Our New Certified Badge.</b></a>
+    </p>
+  </section>
+
+  <!-- end section data -->
+
+  <!--start footer  -->
+
+  <footer class="text-center">
+    <a href=""><img class="ticket"
+        src="https://ci5.googleusercontent.com/proxy/zdmg96N3kG_4cetHCnTlN9Mu3GRSIcwOmOFEjXtXdP0EZbfunUVnVxFlbTMQwa_-5qzPrd32hzn0uLpdGqxU3xXHCPg78TMCqv0HtbVwj8iLW9QaXU0kioSWvw=s0-d-e1-ft#https://d3ui957tjb5bqd.cloudfront.net/images/emails/logos/cm-mark.png?v1"
+        alt="" srcset="" /></a>
+
+    <p>
+      Creative Market,
+      <a href="">600 Congress Ave, 14th Floor, Austin, TX 78701<br />
+        Unsubscribe</a>
+      from these emails
+    </p>
+
+    <div class="photo">
+      <a href=""><img
+          src="https://ci5.googleusercontent.com/proxy/SHumbkt5tBp3xDJkFCHz8Ra_07Nnd5PYeCalGLaYVbHRC-ky48_Ta9EiaawynPS4ytG8beylKV52aBZsUrUbHYjKRPYcFU_j95kwhW2WNM0fSqvBEg=s0-d-e1-ft#https://d3ui957tjb5bqd.cloudfront.net/images/emails/1/facebook.png"
+          alt="" srcset="" /></a>
+
+      <a href=""><img
+          src="https://ci6.googleusercontent.com/proxy/h_tUIm_fnPpWuwL2poiL46VvlmB6DJq3mhQ4pNe_2ccpJ30UMtz6qjslFqgLLD_8vS4_oQdzE3ofrXl-8HS-9QqfSBUuSZA72D_2-qNHaE2XqBUN=s0-d-e1-ft#https://d3ui957tjb5bqd.cloudfront.net/images/emails/1/twitter.png"
+          alt="" srcset="" /></a>
+
+      <a href=""><img
+          src="https://ci6.googleusercontent.com/proxy/kwl90M2A7-7C7N5f4z2DMaBQ_hyRfd4r1qN4afvbzxbxOv6SSquR0JrP4rk3pgaFDf82jCHK0JQZUI3FQH1at096wOFgCWWrI8MlArTg1aY2yBWixS0=s0-d-e1-ft#https://d3ui957tjb5bqd.cloudfront.net/images/emails/1/pinterest.png"
+          alt="" srcset="" /></a>
+
+      <a href=""><img
+          src="https://ci5.googleusercontent.com/proxy/npvlW1CndfztRoeQTPWqnYlBiAQWVCLRBkAliH-fxcFoV21ePcuJvO5N_CLr1ABXxT8JOR_NYTTX2WDXFS8VlYBBTG8vGneATgburJuTqCLy1CiLYTk=s0-d-e1-ft#https://d3ui957tjb5bqd.cloudfront.net/images/emails/1/instagram.png"
+          alt="" srcset="" /></a>
+    </div>
+  </footer>
+</body>
+
 </html>
